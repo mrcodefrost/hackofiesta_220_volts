@@ -2,7 +2,9 @@
 
  L-Scale: A software hardware integrated project which uses Ultrasonic sensors to measure liquid levels and display information in flutter app
 
- L-scale is a software-hardware project developed for Liquid level Tracking.
+ It is a software-hardware project developed for Liquid level Tracking.
+
+  ![1](https://raw.githubusercontent.com/mrcodefrost/hackofiesta_220_volts/main/images/1.png)
 
  ## L Scale variants:
   1) Fixed L-Scale: It will be mounted on a container/vessel/tank and will be sending the data to the mobile application via APIs
