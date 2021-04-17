@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hackofiesta_220_volts/components/main_button.dart';
+import 'package:hackofiesta_220_volts/screens/reading_screen.dart';
+import 'package:hackofiesta_220_volts/screens/records_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -52,6 +54,12 @@ class WelcomeScreen extends StatelessWidget {
                     width: 150,
                     height: 55,
                     text: 'Take Readings',
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ReadingScreen()));
+                    },
                   ),
                 ),
                 Positioned(
@@ -61,6 +69,12 @@ class WelcomeScreen extends StatelessWidget {
                     width: 150,
                     height: 55,
                     text: 'Records',
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RecordsScreen()));
+                    },
                   ),
                 ),
               ],

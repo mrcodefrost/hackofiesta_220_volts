@@ -8,6 +8,15 @@ class ReadingScreen extends StatefulWidget {
 class _ReadingScreenState extends State<ReadingScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: Image.asset('assets/main_background.png').image,
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+    );
   }
 }
