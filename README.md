@@ -69,10 +69,11 @@
  ## Team behind L-Scale
 
  L-Scale is developed by the Team 220 Volts
- -Daksh Nauni
- -Kanav Bhasin
- -Yakshit Gupta
- -Tanish Kamdar
+
+ 1) Daksh Nauni
+ 2) Kanav Bhasin
+ 3) Yakshit Gupta
+ 4) Tanish Kamdar
 
  The hardware code is in the 'Hardware' directory.
  Checkout the 'About the project' directory to access Project powerpoint presentation,demo video etc.
