@@ -9,7 +9,9 @@
   1) Fixed L-Scale: It will be mounted on a container/vessel/tank and will be sending the data to the mobile application via APIs
   2) Portable L-Scale: It can be mounted on a portable vessel, say bottle. It will be sending the data to the mobile application via bluetooth.
 
- ## Does it works?
+  ![4](https://raw.githubusercontent.com/mrcodefrost/hackofiesta_220_volts/main/images/4.jpeg)
+
+ ## How does it work?
 
  L-scale will consist of sensors like- ultrasonic sensor, so as to measure the level of liquid in the tank/vessel/bottle. On measuring the level, it is calculated that what percentage of the vessel is filled. This whole data is sent to thingspeak iot platform via nodemcu and from the cloud,  this real time data is sent to a mobile application, where the concerned person can see the level. Also, it sends alerts via app if the liquid goes down below a certain level.
 
