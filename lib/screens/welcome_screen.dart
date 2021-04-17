@@ -1,11 +1,73 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:hackofiesta_220_volts/components/main_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.red,
-      body: Container(),
+    Size size = MediaQuery.of(context).size;
+    double custWidth = size.width;
+    double custHeight = size.height;
+
+    return SafeArea(
+      child: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: Image.asset('assets/main_background.png').image,
+                fit: BoxFit.cover),
+          ),
+          child: Center(
+            child: Stack(
+              children: <Widget>[
+                Positioned(
+                  top: custHeight * 0.01,
+                  left: custWidth * 0.1,
+                  right: custWidth * 0.1,
+                  child: Container(
+                    // width: custWidth * 0.8,
+                    // height: custHeight * 0.8,
+                    child: Image.asset('assets/logo.png'),
+                  ),
+                ),
+                Positioned(
+                  top: custHeight * 0.45,
+                  left: custWidth * 0.32,
+                  child: Text(
+                    'L-Scale',
+                    style: GoogleFonts.cinzel(
+                      textStyle: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 40,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: custHeight * 0.6,
+                  left: custWidth * 0.35,
+                  child: MainButton(
+                    width: 150,
+                    height: 55,
+                    text: 'Take Readings',
+                  ),
+                ),
+                Positioned(
+                  top: custHeight * 0.75,
+                  left: custWidth * 0.35,
+                  child: MainButton(
+                    width: 150,
+                    height: 55,
+                    text: 'Records',
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
