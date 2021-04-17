@@ -64,3 +64,15 @@
  ### Usage and Feasability
 
  L-Scale is a Multi-Utility IOT Device with support app, created to record and display user’s measurements. It is a low cost device that contributes directly to several utility and industrial purposes.
+
+
+ ## Team behind L-Scale
+
+ L-Scale is developed by the Team 220 Volts
+ -Daksh Nauni
+ -Kanav Bhasin
+ -Yakshit Gupta
+ -Tanish Kamdar
+
+ The hardware code is in the 'Hardware' directory.
+ Checkout the 'About the project' directory to access Project powerpoint presentation,demo video etc.
