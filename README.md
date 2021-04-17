@@ -75,5 +75,4 @@
  3) Yakshit Gupta
  4) Tanish Kamdar
 
- The hardware code is in the 'Hardware' directory.
- Checkout the 'About the project' directory to access Project powerpoint presentation,demo video etc.
+ ### The hardware code is in the 'Hardware' directory. Checkout the 'About the project' directory to access Project powerpoint presentation,demo video etc.
