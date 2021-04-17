@@ -1,6 +1,7 @@
 # hackofiesta_220_volts
 
- L-Scale: A software hardware integrated project which uses Ultrasonic sensors to measure liquid levels and display information in flutter app
+ ## L-Scale
+  A software hardware integrated project which uses Ultrasonic sensors to measure liquid levels and display information in flutter app
 
   ![1](https://raw.githubusercontent.com/mrcodefrost/hackofiesta_220_volts/main/images/1.png)
 
