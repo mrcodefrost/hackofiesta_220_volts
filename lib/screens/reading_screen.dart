@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hackofiesta_220_volts/components/shape_card.dart';
+import 'package:hackofiesta_220_volts/shared/constants.dart';
 
 class ReadingScreen extends StatefulWidget {
   @override
@@ -23,29 +25,56 @@ class _ReadingScreenState extends State<ReadingScreen> {
           child: Center(
             child: Stack(
               children: [
-                Column(
-                  children: <Widget>[
-                    SizedBox(height: 30),
-                    Container(
-                      width: custWidth * 0.8,
-                      height: custHeight * 0.5,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border:
-                            Border.all(width: 2, color: Colors.lightBlueAccent),
-                        borderRadius: BorderRadius.circular(30),
+                SingleChildScrollView(
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(height: 30),
+                      Container(
+                        width: custWidth * 0.8,
+                        height: custHeight * 0.5,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(
+                              width: 2, color: Colors.lightBlueAccent),
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Image.asset('assets/bottle_diagram.png'),
+                            Text(
+                              'L = Depth at which liquid is present \n D = Depth of the liquid itself \n H = Height of the vessel itself',
+                              style: TextStyle(fontSize: 17),
+                            ),
+                          ],
+                        ),
                       ),
-                      child: Column(
-                        children: [
-                          Image.asset('assets/bottle_diagram.png'),
-                          Text('L = Depth at which liquid is present'),
-                          Text('D = Depth of the liquid itself'),
-                          Text('H = Height of the '),
-                          Text('L = '),
-                        ],
+                      SizedBox(height: 20),
+                      Container(
+                        width: custWidth * 0.9,
+                        height: custHeight,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(
+                              width: 2, color: Colors.lightBlueAccent),
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Column(
+                          children: <Widget>[
+                            SizedBox(height: 15),
+                            Text('Volume'),
+                            ShapeCard(
+                              message: 'Volume',
+                              imagePath: 'assets/logo.png',
+                              height: custHeight * 0.1,
+                              width: custWidth * 0.5,
+                              circleAvatarColor: kBgLightBlue,
+                            )
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),

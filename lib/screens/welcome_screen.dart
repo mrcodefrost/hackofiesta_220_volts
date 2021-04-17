@@ -72,6 +72,15 @@ class WelcomeScreen extends StatelessWidget {
                                   builder: (context) => RecordsScreen()));
                         },
                       ),
+                      SizedBox(height: 40),
+                      Text(
+                        'MADE IN INDIA',
+                        style: GoogleFonts.raleway(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 15.0,
+                        ),
+                      ),
                     ],
                   ),
                 ),
