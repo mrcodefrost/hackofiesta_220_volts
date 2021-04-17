@@ -38,9 +38,9 @@ class _ReadingScreenState extends State<ReadingScreen> {
                       child: Column(
                         children: [
                           Image.asset('assets/bottle_diagram.png'),
-                          Text('L = '),
-                          Text('L = '),
-                          Text('L = '),
+                          Text('L = Depth at which liquid is present'),
+                          Text('D = Depth of the liquid itself'),
+                          Text('H = Height of the '),
                           Text('L = '),
                         ],
                       ),
