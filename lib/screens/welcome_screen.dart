@@ -35,46 +35,44 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 Positioned(
                   top: custHeight * 0.45,
-                  left: custWidth * 0.32,
-                  child: Text(
-                    'L-Scale',
-                    style: GoogleFonts.cinzel(
-                      textStyle: TextStyle(
-                        color: Colors.blue,
-                        fontSize: 40,
-                        fontWeight: FontWeight.w600,
+                  left: custWidth * 0.31,
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        'L-Scale',
+                        style: GoogleFonts.cinzel(
+                          textStyle: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 40,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                ),
-                Positioned(
-                  top: custHeight * 0.6,
-                  left: custWidth * 0.35,
-                  child: MainButton(
-                    width: 150,
-                    height: 55,
-                    text: 'Take Readings',
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ReadingScreen()));
-                    },
-                  ),
-                ),
-                Positioned(
-                  top: custHeight * 0.75,
-                  left: custWidth * 0.35,
-                  child: MainButton(
-                    width: 150,
-                    height: 55,
-                    text: 'Records',
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => RecordsScreen()));
-                    },
+                      SizedBox(height: 130),
+                      MainButton(
+                        width: 150,
+                        height: 55,
+                        text: 'Take Readings',
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ReadingScreen()));
+                        },
+                      ),
+                      SizedBox(height: 30),
+                      MainButton(
+                        width: 150,
+                        height: 55,
+                        text: 'Records',
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => RecordsScreen()));
+                        },
+                      ),
+                    ],
                   ),
                 ),
               ],

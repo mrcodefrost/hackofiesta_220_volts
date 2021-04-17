@@ -12,7 +12,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: Image.asset('assets/main_background.png').image,
+              image: Image.asset('assets/plain_bg.png').image,
               fit: BoxFit.cover),
         ),
       ),
