@@ -16,7 +16,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
   String distance;
 
   void updateDistance(dynamic arduinoData) {
-    distance = arduinoData['feeds'][55]['field1'];
+    distance = arduinoData['feeds'][269]['field1'];
   }
 
   @override
