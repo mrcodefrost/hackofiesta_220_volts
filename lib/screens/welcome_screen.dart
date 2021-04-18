@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hackofiesta_220_volts/components/main_button.dart';
-import 'package:hackofiesta_220_volts/screens/reading_screen.dart';
+import 'package:hackofiesta_220_volts/screens/loading_screen.dart';
 import 'package:hackofiesta_220_volts/screens/records_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -57,7 +57,7 @@ class WelcomeScreen extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ReadingScreen()));
+                                  builder: (context) => LoadingPage()));
                         },
                       ),
                       SizedBox(height: 30),
