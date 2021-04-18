@@ -16,7 +16,8 @@ class _ReadingScreenState extends State<ReadingScreen> {
   String distance;
 
   void updateDistance(dynamic arduinoData) {
-    distance = arduinoData['feeds'][269]['field1'];
+    distance = arduinoData['feeds'][55]
+        ['field1']; //removed live streaming - set for judging,
   }
 
   @override
@@ -87,7 +88,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
                   // Second Box
                   Container(
                     width: custWidth * 0.9,
-                    height: custHeight * 1,
+                    height: custHeight * 0.6,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border:
@@ -153,7 +154,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
                         //   width: custWidth * 0.5,
                         //   circleAvatarColor: kBgLightBlue,
                         // ),
-                        // SizedBox(height: 20),
+                        SizedBox(height: 20),
                         MainButton(
                           width: 150,
                           height: 55,
